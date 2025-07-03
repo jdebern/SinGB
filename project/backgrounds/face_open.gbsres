@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "abcb58c7-4b2c-464f-b76a-30cc848b3432",
+  "name": "face_open",
+  "symbol": "bg_scaled_image_1",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "face_open.png",
+  "tileColors": ""
+}

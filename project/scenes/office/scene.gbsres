@@ -1,0 +1,178 @@
+{
+  "_resourceType": "scene",
+  "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878",
+  "_index": 6,
+  "name": "Office",
+  "backgroundId": "c980880d-3721-4f72-bf7d-f14d69c8ca5f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_7",
+  "x": 1152,
+  "y": 304,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "cdfa23e2-395e-465f-a6e1-afe5e2a2e81c"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": []
+      },
+      "id": "6bd4c5b5-2ceb-4b71-8666-7bfef6f3a362"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "up"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "bfea78cb-36fc-4d78-a661-845d2d345180",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": true
+            },
+            "id": "0ffa49f0-f7dc-4c01-a007-a6e243e9840d"
+          }
+        ]
+      },
+      "id": "ef19d91f-dca5-44e7-8e7a-bd08c89e93c0"
+    },
+    {
+      "id": "7a414990-56ea-4284-b47d-78c94c1cc7c7",
+      "command": "EVENT_GROUP",
+      "args": {
+        "__collapse": false,
+        "__label": "QuicktimeBar"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "0",
+              "operation": "set",
+              "other": "rnd",
+              "vectorY": "L0",
+              "value": "0",
+              "minValue": "0",
+              "maxValue": 4,
+              "clamp": false,
+              "__collapse": true,
+              "__label": "RandomizeQuicktimeBarIndex"
+            },
+            "id": "f5f84989-35f0-4e6f-83f9-e775cb6762bd"
+          },
+          {
+            "command": "EVENT_LOOP_FOR",
+            "args": {
+              "variable": "T0",
+              "from": {
+                "type": "number",
+                "value": 3
+              },
+              "comparison": "<=",
+              "to": {
+                "type": "number",
+                "value": 16
+              },
+              "operation": "+=",
+              "value": {
+                "type": "number",
+                "value": 1
+              },
+              "__collapse": false,
+              "__label": "SwapInQuicktimeBar"
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_REPLACE_TILE_XY",
+                  "args": {
+                    "x": {
+                      "type": "variable",
+                      "value": "T0"
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    },
+                    "tilesetId": "4c081012-a55c-4f3c-bcb6-629a81945fa4",
+                    "tileIndex": {
+                      "type": "expression",
+                      "value": "(14*$00$)+$T0$-3"
+                    }
+                  },
+                  "id": "61b48975-2619-47a1-8f49-87cd3ebcc7a7"
+                }
+              ]
+            },
+            "id": "a9657d35-637a-47d3-bf29-7fb1df110318"
+          },
+          {
+            "command": "EVENT_ACTOR_ACTIVATE",
+            "args": {
+              "actorId": "4d4292e6-358c-48ea-bb6a-94077dacdfb3"
+            },
+            "id": "8d67098a-1f28-4277-a05d-71426232cd95"
+          }
+        ]
+      }
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "!F:cb4a9260-5eb8-4546-b546-4e71ab3bd9a0!OFFICE",
+        "x": 7,
+        "y": 0,
+        "location": "background",
+        "__collapse": true
+      },
+      "id": "9d046c61-8aa7-4acb-9492-36439b80acb3"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

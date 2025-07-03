@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "b4200125-4507-4e5b-ac71-12b18ef29de8",
+  "name": "room_west",
+  "symbol": "bg_room_west",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "room_west.png",
+  "tileColors": ""
+}

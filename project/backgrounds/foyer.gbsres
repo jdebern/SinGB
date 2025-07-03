@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "52265ba5-094d-4637-a4fa-d206b5036022",
+  "name": "foyer",
+  "symbol": "bg_foyer",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "foyer.png",
+  "tileColors": ""
+}

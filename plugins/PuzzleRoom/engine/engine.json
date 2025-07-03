@@ -1,0 +1,9 @@
+{
+  "version": "4.2.0-e1",
+  "sceneTypes": [
+    {
+      "key": "puzzleroom",
+      "label": "Puzzle Room"
+    }
+  ]
+}

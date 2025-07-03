@@ -1,0 +1,91 @@
+{
+  "_resourceType": "scene",
+  "id": "4d24dcb6-20fe-4036-8807-cc69e517eeee",
+  "_index": 4,
+  "name": "Logo3",
+  "backgroundId": "a8ca825c-78e5-4f16-a24b-5252c33d579f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [
+    "default-bg-4",
+    null,
+    null,
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [],
+  "collisions": "00168+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_5",
+  "x": 1400,
+  "y": 56,
+  "script": [
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 0.5,
+        "frames": 30,
+        "__scriptTabs": "end",
+        "__collapse": true
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "3d2af8fc-22ae-47b7-8c98-b5819a349445",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 1
+            },
+            "id": "5de5663a-8f4a-43bf-affa-181662a19ec5"
+          }
+        ]
+      },
+      "id": "52ba5a30-2f16-4985-aeac-d9ce5bdb7849"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "9d58fa09-efde-4033-844e-60399a0f04fd"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a",
+          "b",
+          "start",
+          "select",
+          "left",
+          "up",
+          "down",
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": []
+      },
+      "id": "27dda6d6-b057-4ad7-881e-5d3435906255"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": false
+}

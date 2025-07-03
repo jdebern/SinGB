@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "561297f4-e899-4dc6-a75a-2f32f12db77d",
+  "name": "face",
+  "symbol": "bg_scaled_image_0",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "face.png",
+  "tileColors": ""
+}

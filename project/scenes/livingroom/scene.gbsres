@@ -1,0 +1,131 @@
+{
+  "_resourceType": "scene",
+  "id": "7da4536a-32e8-4db3-8bab-7a0930f2093e",
+  "_index": 1,
+  "name": "LivingRoom",
+  "backgroundId": "e097dc9d-5b4e-4884-afdd-6db60f1899ff",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "POINTNCLICK",
+  "paletteIds": [
+    "default-bg-4"
+  ],
+  "spritePaletteIds": [
+    "default-bg-4"
+  ],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_2",
+  "x": 736,
+  "y": 304,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": true
+      },
+      "id": "96c67ac3-17e1-4245-b833-706bf7679ffb"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left",
+          "up",
+          "down",
+          "right"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": []
+      },
+      "id": "6c25dd0b-c592-4d04-a462-42f8590b9cbf"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "right"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "bfea78cb-36fc-4d78-a661-845d2d345180",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "794fd629-f1f9-4884-9ce5-06d224b8fa5f"
+          }
+        ]
+      },
+      "id": "8076f5fd-8e44-45c1-879c-fabf502caefe"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "left"
+        ],
+        "override": false,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "49867afc-fb94-43b5-886f-d603b36c174e",
+              "x": {
+                "type": "number",
+                "value": 17
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "d36754ab-4fff-49b8-843a-194065b77922"
+          }
+        ]
+      },
+      "id": "f5955fde-d884-4f49-bd2b-72c51f669d44"
+    },
+    {
+      "command": "EVENT_TEXT_DRAW",
+      "args": {
+        "text": "!F:cb4a9260-5eb8-4546-b546-4e71ab3bd9a0!LIVING ROOM",
+        "x": 4,
+        "y": 16,
+        "location": "background",
+        "__collapse": false
+      },
+      "id": "eaded6bf-51f6-41ad-af65-d006ea1950b1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "autoFadeEventCollapse": true
+}

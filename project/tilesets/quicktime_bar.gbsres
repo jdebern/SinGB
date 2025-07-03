@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "4c081012-a55c-4f3c-bcb6-629a81945fa4",
+  "name": "quicktime_bar",
+  "symbol": "tileset_quicktime_bar",
+  "width": 14,
+  "height": 5,
+  "imageWidth": 112,
+  "imageHeight": 40,
+  "filename": "quicktime_bar.png"
+}

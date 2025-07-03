@@ -1,0 +1,15 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "QuicktimeBarIndex",
+      "symbol": "var_quicktimebarindex"
+    },
+    {
+      "id": "1",
+      "name": "MagnifierIndex",
+      "symbol": "var_magnifierindex"
+    }
+  ]
+}

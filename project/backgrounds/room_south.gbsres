@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "8e916aee-0229-411e-8a6a-69aec9e7ab66",
+  "name": "room_south",
+  "symbol": "bg_room_south",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "room_south.png",
+  "tileColors": ""
+}
