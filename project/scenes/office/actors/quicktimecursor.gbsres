@@ -1,7 +1,7 @@
 {
   "_resourceType": "actor",
   "id": "4d4292e6-358c-48ea-bb6a-94077dacdfb3",
-  "name": "Quicktime Cursor",
+  "name": "QuicktimeCursor",
   "frame": 0,
   "animate": false,
   "spriteSheetId": "19ccf28e-f73c-4f18-836d-522ff4685cca",
@@ -23,7 +23,7 @@
         "variable": "L3",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 1
         },
         "__collapse": false
       },
@@ -33,7 +33,7 @@
       "command": "EVENT_ACTOR_DEACTIVATE",
       "args": {
         "actorId": "$self$",
-        "__collapse": true
+        "__collapse": false
       },
       "id": "6cbf68ca-5fa9-460b-93e7-6d79229a9377"
     },
@@ -43,9 +43,10 @@
         "input": [
           "a"
         ],
-        "override": true,
+        "override": false,
         "__scriptTabs": "press",
-        "__label": "TestSweetspot"
+        "__label": "TestSweetspot",
+        "__comment": true
       },
       "children": {
         "true": [
@@ -86,78 +87,9 @@
             "children": {
               "true": [
                 {
-                  "id": "aa58e9e9-c77d-43b3-9bfd-bdf3330eed7a",
-                  "command": "EVENT_GROUP",
-                  "args": {
-                    "__collapse": true,
-                    "__label": "QuicktimeBar"
-                  },
-                  "children": {
-                    "true": [
-                      {
-                        "command": "EVENT_VARIABLE_MATH",
-                        "args": {
-                          "vectorX": "0",
-                          "operation": "set",
-                          "other": "rnd",
-                          "vectorY": "L0",
-                          "value": "0",
-                          "minValue": "0",
-                          "maxValue": 4,
-                          "clamp": false,
-                          "__collapse": true,
-                          "__label": "RandomizeQuicktimeBarIndex"
-                        },
-                        "id": "e89dc0c7-0926-4ca5-9411-28ff54c63ed5"
-                      },
-                      {
-                        "command": "EVENT_LOOP_FOR",
-                        "args": {
-                          "variable": "T0",
-                          "from": {
-                            "type": "number",
-                            "value": 3
-                          },
-                          "comparison": "<=",
-                          "to": {
-                            "type": "number",
-                            "value": 16
-                          },
-                          "operation": "+=",
-                          "value": {
-                            "type": "number",
-                            "value": 1
-                          },
-                          "__collapse": true,
-                          "__label": "SwapInQuicktimeBar"
-                        },
-                        "children": {
-                          "true": [
-                            {
-                              "command": "EVENT_REPLACE_TILE_XY",
-                              "args": {
-                                "x": {
-                                  "type": "variable",
-                                  "value": "T0"
-                                },
-                                "y": {
-                                  "type": "number",
-                                  "value": 16
-                                },
-                                "tilesetId": "4c081012-a55c-4f3c-bcb6-629a81945fa4",
-                                "tileIndex": {
-                                  "type": "expression",
-                                  "value": "(14*$00$)+$T0$-3"
-                                }
-                              },
-                              "id": "33260e9b-e8fa-4f97-b13f-18b130642b16"
-                            }
-                          ]
-                        },
-                        "id": "a76e65fd-5d4f-4d5b-a831-1d3d9a3bbe20"
-                      }
-                    ]
-                  }
+                  "command": "EVENT_CALL_CUSTOM_EVENT",
+                  "args": {},
+                  "id": "e3f7b716-5d7e-466b-a1c5-705c2b14ec62"
                 },
                 {
                   "command": "EVENT_SWITCH",
@@ -286,7 +218,7 @@
           },
           "valueB": {
             "type": "number",
-            "value": 8
+            "value": 4
           }
         },
         "y": {
@@ -296,7 +228,7 @@
         "moveType": "horizontal",
         "useCollisions": false,
         "units": "pixels",
-        "__collapse": false
+        "__collapse": true
       },
       "id": "d703938c-5018-48c5-98c5-8c5b5308f86d"
     },
@@ -304,18 +236,18 @@
       "command": "EVENT_IF",
       "args": {
         "condition": {
-          "type": "eq",
+          "type": "lt",
           "valueA": {
             "type": "property",
             "target": "$self$",
-            "property": "xpos"
+            "property": "pxpos"
           },
           "valueB": {
             "type": "number",
-            "value": 3
+            "value": 28
           }
         },
-        "__collapseElse": true,
+        "__collapseElse": false,
         "__collapse": false,
         "__label": "UpdateDirection"
       },
@@ -331,6 +263,23 @@
               }
             },
             "id": "83696814-4488-4f5a-b071-85ae537c1e4d"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 28
+              },
+              "y": {
+                "type": "property",
+                "target": "$self$",
+                "property": "pypos"
+              },
+              "units": "pixels"
+            },
+            "id": "dbcec409-a68c-4451-83e2-d07ce341ee1b"
           }
         ],
         "false": [
@@ -338,15 +287,15 @@
             "command": "EVENT_IF",
             "args": {
               "condition": {
-                "type": "eq",
+                "type": "gt",
                 "valueA": {
                   "type": "property",
                   "target": "$self$",
-                  "property": "xpos"
+                  "property": "pxpos"
                 },
                 "valueB": {
                   "type": "number",
-                  "value": 16
+                  "value": 126
                 }
               },
               "__collapseElse": true,
@@ -364,6 +313,23 @@
                     }
                   },
                   "id": "bef1381d-a0ef-455e-ad71-40a305037128"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 126
+                    },
+                    "y": {
+                      "type": "property",
+                      "target": "$self$",
+                      "property": "pypos"
+                    },
+                    "units": "pixels"
+                  },
+                  "id": "52f811d8-dcc2-4ee9-b1cb-ef88d379f3c6"
                 }
               ],
               "false": []

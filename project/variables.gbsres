@@ -8,8 +8,43 @@
     },
     {
       "id": "1",
-      "name": "MagnifierIndex",
-      "symbol": "var_magnifierindex"
+      "name": "SearchesCompleted",
+      "symbol": "var_searchescompleted"
+    },
+    {
+      "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L0",
+      "name": "LoopCounter",
+      "symbol": "var_loopcounter"
+    },
+    {
+      "id": "7a6de468-6542-43f8-b9ff-9226202c1bd3__L0",
+      "name": "SearchesRequired",
+      "symbol": "var_searchesrequired"
+    },
+    {
+      "id": "4d4292e6-358c-48ea-bb6a-94077dacdfb3__L3",
+      "name": "Direction",
+      "symbol": "var_direction"
+    },
+    {
+      "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L1",
+      "name": "SearchActive",
+      "symbol": "var_searchactive"
+    },
+    {
+      "id": "2",
+      "name": "SweetspotPos",
+      "symbol": "var_sweetspotpos"
+    },
+    {
+      "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L2",
+      "name": "SweetspotTileX",
+      "symbol": "var_sweetspottilex"
+    },
+    {
+      "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L3",
+      "name": "CursorTileX",
+      "symbol": "var_cursortilex"
     }
   ]
 }

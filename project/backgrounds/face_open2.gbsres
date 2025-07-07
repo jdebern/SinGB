@@ -8,5 +8,6 @@
   "imageWidth": 160,
   "imageHeight": 144,
   "filename": "face_open2.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }

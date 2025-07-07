@@ -2,24 +2,24 @@
   "_resourceType": "scene",
   "id": "3d2af8fc-22ae-47b7-8c98-b5819a349445",
   "_index": 3,
-  "name": "Logo2",
-  "backgroundId": "abcb58c7-4b2c-464f-b76a-30cc848b3432",
-  "tilesetId": "",
-  "width": 20,
-  "height": 18,
   "type": "TOPDOWN",
-  "paletteIds": [
-    "default-bg-4",
-    null,
-    null,
-    "default-bg-1"
-  ],
-  "spritePaletteIds": [],
-  "collisions": "00168+",
-  "autoFadeSpeed": 1,
+  "name": "Logo2",
   "symbol": "scene_4",
   "x": 1232,
   "y": 56,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "abcb58c7-4b2c-464f-b76a-30cc848b3432",
+  "tilesetId": "",
+  "paletteIds": [
+    "default-bg-4",
+    "",
+    "",
+    "default-bg-1"
+  ],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "autoFadeEventCollapse": false,
   "script": [
     {
       "command": "EVENT_SET_TIMER_SCRIPT",
@@ -87,5 +87,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "autoFadeEventCollapse": false
+  "collisions": "00168+"
 }

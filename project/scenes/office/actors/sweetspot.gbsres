@@ -1,0 +1,36 @@
+{
+  "_resourceType": "actor",
+  "id": "b39ad2cb-55a6-4c1a-83ea-83d57ff95960",
+  "name": "Sweetspot",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a79e179d-912e-42db-b053-48b973cb303b",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "1",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_6",
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$",
+        "__collapse": false
+      },
+      "id": "f0f15e86-c8d0-4619-9984-613bc2f68bcc"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 5,
+  "y": 16,
+  "_index": 1
+}

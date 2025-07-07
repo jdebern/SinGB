@@ -8,5 +8,6 @@
   "imageWidth": 64,
   "imageHeight": 64,
   "filename": "ui_tiles.png",
-  "tileColors": ""
+  "tileColors": "",
+  "autoColor": false
 }
