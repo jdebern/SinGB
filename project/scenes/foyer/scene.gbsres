@@ -7,7 +7,7 @@
   "tilesetId": "",
   "width": 20,
   "height": 18,
-  "type": "POINTNCLICK",
+  "type": "puzzleroom",
   "paletteIds": [
     "default-bg-4"
   ],

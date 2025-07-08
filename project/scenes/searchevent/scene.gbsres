@@ -1,0 +1,47 @@
+{
+  "_resourceType": "scene",
+  "id": "2804dec6-e58e-4c8d-8507-05902af14add",
+  "_index": 7,
+  "name": "SearchEvent",
+  "backgroundId": "d69c8e29-90d3-4746-bd61-fa68ba37a25f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "puzzleroom",
+  "paletteIds": [
+    "default-bg-4",
+    null,
+    null,
+    ""
+  ],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 2,
+  "symbol": "scene_8",
+  "x": 1360,
+  "y": 296,
+  "script": [
+    {
+      "command": "EVENT_REPLACE_TILE_XY",
+      "args": {
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "tilesetId": "091a37c9-d98c-4972-96de-5bbf56810f46",
+        "tileIndex": {
+          "type": "number",
+          "value": 7
+        }
+      },
+      "id": "fac80f3f-251a-4b0a-9392-789e60d0fc1a"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

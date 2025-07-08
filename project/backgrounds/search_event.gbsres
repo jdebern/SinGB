@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d69c8e29-90d3-4746-bd61-fa68ba37a25f",
+  "name": "search_event",
+  "symbol": "bg_search_event",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "search_event.png",
+  "tileColors": ""
+}

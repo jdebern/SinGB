@@ -12,6 +12,11 @@
       "symbol": "var_searchescompleted"
     },
     {
+      "id": "2",
+      "name": "SweetspotPos",
+      "symbol": "var_sweetspotpos"
+    },
+    {
       "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L0",
       "name": "LoopCounter",
       "symbol": "var_loopcounter"
@@ -30,11 +35,6 @@
       "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L1",
       "name": "SearchActive",
       "symbol": "var_searchactive"
-    },
-    {
-      "id": "2",
-      "name": "SweetspotPos",
-      "symbol": "var_sweetspotpos"
     },
     {
       "id": "d4454aff-4c0c-47e1-9372-84c01fa7f878__L2",
